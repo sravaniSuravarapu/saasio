@@ -59,7 +59,59 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 ### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This section has moved heimport React from 'react'
+import com1 from '../assests/envato.png';
+import com2 from '../assests/google.png';
+import com3 from '../assests/sketch.png';
+import com4 from '../assests/google.png';
+import footerimage from '../assests/footermobile.png';
+
+import footersection from '../assests/footersection.png';
+import { IoDiamond } from "react-icons/io5";
+
+const Trustedcompany = () => {
+  return (
+    <div className='w-full h-[100vh]  flex flex-col justify-start items-center'>
+    <div className=' flex flex-col gap-5 m-auto justify-start items-center'>
+        <div className=' flex gap-12 px-5'>
+            <img src={com2} alt='companies'></img>
+            <img src={com3} alt='companies'></img>
+            <img src={com4} alt='companies'></img>
+            <img src={com1} alt='companies'></img>
+        </div>
+        <div className='flex gap-5 px-8'>
+             <div className='w-[30px] h-[30px] bg-[#ffc107] shadow-[#ffc107]-xl flex justify-center items-center rounded-full'>
+             <IoDiamond className='w-7 h-7 text-[white]'/>
+             </div>
+             <div className='flex flex-col justify-start'>
+                <p className='font-bold'>Trusted by 12,00 companies!</p>
+                <p className='font-semibold text-gray-600'>We have more than 1200+ trusted clients around World wide.</p>
+             </div>
+        </div>
+       
+        
+        <img className='relative w-full md:h-[300px] h-[300px]' src={footersection} alt='footer'></img>
+          <div className=' absolute w-full  m-auto grid md:grid-cols-3 grid-cols-1 '>
+            <div className='relative w-full h-full col-span-2 flex flex-col items-center justify-center gap-3 md:top-0 top-[220px] p-5'  >
+            <p className=' relative text-5xl font-bold text-[white] '>Subscribe to our newsletter</p>
+            <div class='relative w-full max-w-[500px] h-[50px] bg-white rounded-full flex items-center p-2'>
+           <input type="email" id="email" name="email" placeholder="Enter your email" class=" px-4 flex-grow appearance-none bg-transparent text-gray-700 focus:outline-none"></input>
+           <button class="ml-2 px-7 py-4 bg-[red] rounded-full text-white">Subscribe Now</button>
+             </div>
+            <p className='relative text-[white] text-[15px] '>* Your mail address will be fully secure . We don’t share!</p>
+            </div>
+            <div className='hidden md:block'>
+            <img className="relative top-[-0px]" src={footerimage} alt='mob'></img>
+            </div>
+
+            
+        </div>
+        </div>
+    </div>
+  )
+}
+
+export default Trustedcompanyre: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
 

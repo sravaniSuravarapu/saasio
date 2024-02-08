@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Navbar from './components/Navbar'
+import Herosection from './components/Herosection'
+import Cardsection from './components/Cardsection'
+import Section3 from './components/Section3'
+import Numbers from './components/Numbers'
+import Stepssec from './components/Stepssec'
+import Downloadsec from './components/Downloadsec'
+import Expert from './components/Expert'
+import Mobilecarosal from './components/Mobilecarosal'
+import Zoomsec from './components/Zoomsec'
+import Trustedcompany from './components/Trustedcompany'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+     
+      <Herosection/>
+      <Cardsection/>
+      {/* <Section3/> */}
+      <Numbers/>
+      <Stepssec/>
+      <Downloadsec/>
+      <Expert/>
+      <Mobilecarosal/>
+      <Zoomsec/> 
+       <Trustedcompany/> 
+       <Footer/> 
+    </>
+  )
 }
 
-export default App;
+export default App
